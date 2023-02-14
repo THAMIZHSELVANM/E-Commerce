@@ -1,0 +1,347 @@
+:root{
+    --orange:#ff7800;
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--black);
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background: #894af9;
+    color:#fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    text-transform:capitalize;
+    text-decoration: none;
+    transition: all .2s linear;
+
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background:#eee;
+}
+
+section{
+    padding:2rem 9%;
+}
+
+
+.heading{
+    text-align: center;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color:var(--black);
+}
+
+.heading span{
+    background: #894af9;
+    color:#fff;
+    display: inline-block;
+    padding:.5rem 3rem;
+    border-radius: 20px;
+    
+}
+
+
+nav{
+    display: flex;
+    width: 100%;
+    background: #eeefef;
+    position: relative;
+    justify-content: space-between;
+    padding: 15px 30px;
+    
+}
+
+
+/*effect-box*/
+a.effect-box:after,
+a.effect-box:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  margin-top: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  
+}
+
+a.effect-box:before {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  -webkit-transform: scale(1,0);
+  transform: scale(1,0);
+}
+
+a.effect-box:after {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+a.effect-box:hover:after,
+a.effect-box:hover:before {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo{
+    font-size:25px;
+    font-weight:800;
+    color:#894af9;
+    cursor: pointer;
+
+}
+nav ul{
+    display:flex;
+    list-style:none;
+    margin: auto 0;
+}
+nav ul li{
+    margin: 0 2px;
+}
+nav ul li a{
+    color: #894af9;
+    font-size:20px;
+    text-decoration:none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 5px;
+    font-weight: 500;
+}
+nav ul li:hover a{
+    background:#894af9;
+    color:white;
+}
+nav .search_bar{
+    display:flex;
+    margin: auto 0;
+    height:35px;
+    line-height:35px;
+}
+nav .search_bar input{
+    border: solid;
+    outline:none;
+    background:#eeefef;
+    height:100%;
+    padding: 0 10px;
+    width: 350px;
+    border-color: #894af9;
+    border-radius: 10px;
+
+}
+nav .search_bar span{
+    color: #894af9;
+    font-size: 20px;
+    background: #eeefef;
+    height:100%;
+    padding: 8px;
+    position:relative;
+    cursor:pointer;
+    z-index:1;
+    border-radius: 10px;
+}
+
+nav .search_bar span:hover{
+    color:white;
+    background: #894af9;
+}
+
+/* animation on serch icon
+nav .search_bar span::after{
+    height:100%;
+    width: 0%;
+    content:'';
+    background:blue;
+    position: absolute;
+    top:0;
+    right:0;
+    z-index:-1;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+nav .search_bar span:hover::after{
+    width: 100%;
+} */
+
+
+/* header 2*/
+
+.navbar{
+    background-color: #894af9;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30%;
+    padding-right: 30%;
+    display:flex;
+   
+    
+}
+
+.header-2 .navbar{
+    text-align: center;
+    display:flex;
+   
+}
+
+.header-2 .navbar a{
+    color:white;
+    display: flex;
+    padding:0.5px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-left: 15px; /*the nav is on the right */ 
+    margin-right: 15px; 
+    
+}
+
+.navbar a:hover{
+    background-color:var(darkcolor);
+     
+}
+
+.header-2.active{
+    position:fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+
+}
+.user-interactions{
+    display: flex;
+    position: absolute;
+    right:5vw;
+    top:50%;
+    transform:translateY(-50%);
+    justify-content: space-between;
+    width:70px;
+    cursor:pointer ;
+}
+
+
+
+
+
+/*product img*/
+
+.flex-box{
+    display:flex;
+    width: 100px;
+    margin: 20px auto;
+
+}
+.left{
+    width: 50%;
+}
+.big-img{
+    width: 350px;
+    
+}
+.big-img img{
+    position: relative;
+    width: inherit;
+    left:-500px;
+    top: 10px;
+}
+
+.right .url{
+    width: 400px;
+    font-size:16px;
+    font-weight:400;
+    color:#894af9;
+    cursor:pointer;
+}
+.pname{
+    font-size:30px;
+    font-weight:600;
+    margin-top: 50px;
+}
+.ratings i{
+    color:#894af9;
+
+}
+.price{
+    font-size:20px;
+    font-weight:500;
+    margin: 20px 0;
+}
+.quantity{
+    display: flex;
+}
+.quantity p{
+    font-size:18px;
+    font-weight: 600;
+}
+.quantity input{
+    width: 40px;
+    font-size:17px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 15px;
+}
+.btn-box{
+    display : flex;
+    margin: 20px 0;
+}
+
+
+
+
+.product-content{
+    font-size: medium;
+    padding-top: 1em;
+}
+
+
